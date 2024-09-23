@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend";
+  background-color: #f9f7f3;
+}
+
+.sticky-div {
+  backdrop-filter: blur(4px);
+}
+.sticky-div,
+.sticky-div * {
+  background-color: transparent;
+  z-index: 20;
+}
+
+.green-active {
+  color: rgb(17, 17, 17) !important;
+  background: rgb(180, 244, 97) !important;
+  border: 1px solid rgb(180, 244, 97) !important;
+}
+
+.button-offgreen {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(17, 17, 17, 0.7);
+  border: 1px solid rgb(17, 17, 17, 0.3);
+  background: inherit;
+  transition: all 0.2s linear;
+}
+.green-active:hover {
+  background-color: rgb(169, 238, 78) !important;
+}
+.button-offgreen:hover {
+  background-color: rgb(17, 17, 17, 0.1);
+}
+
+.button-offgreen:active {
+  transform: scale(0.95);
+}
+
+.app,
+.app * {
+  background-color: white;
+}
+.amount,
+.amount * {
+  background: #f3f3f3;
+}
+
+.card-container img{
+  max-width: 522px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.congrats-container {
+  background-color: rgb(17, 17, 17, 0.3);
+
+  transition: all 0.5s ease;
+}
+
+.hidden-true {
+  display: none !important;
+}
+/* history */
+.history {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.history h2 {
+  color: rgb(17, 17, 17);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.history p {
+  color: rgba(17, 17, 17, 0.7);
+
+  font-size: 16px;
+  font-weight: 300;
+}

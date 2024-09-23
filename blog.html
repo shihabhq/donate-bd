@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/blog.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="sticky-div w-full fixed top-0 left-0">
+      <nav
+        class="w-[95%] xl:w-10/12 mx-auto flex flex-col gap-3 sm:flex-row justify-between items-center pt-6 pb-4 sm:pb-8"
+      >
+        <div>
+          <button class="home-button button-offgreen green-active">Home</button>
+        </div>
+        <div
+          class="flex items-center justify-center gap-4 text-xl font-semibold text-[#111111]"
+        >
+          <img src="assets/logo.png" alt="" />
+          <h2>Donate Bangladesh</h2>
+        </div>
+        <div
+          class="flex items-center justify-center gap-4 text-xl font-medium text-[#111111]"
+        >
+          <div><img src="assets/coin.png" alt="" /></div>
+          <div class="opacity-70"><span class="balance">5500</span> BDT</div>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="faq-container my-48 sm:my-32 py-6 w-full mx-auto bg-white flex flex-col"
+    >
+      <h2
+        class="text-4xl mb-6 text-[#111111] opacity-85 font-semibold w-10/12 mx-auto"
+      >
+        Important FAQ?
+      </h2>
+
+      <div class="join join-vertical w-10/12 mx-auto">
+        <div class="collapse collapse-arrow join-item border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Document Object Model or DOM is the Object structure of the
+              browser through which JavaScript can interact with the browser UI
+              . Thus it helps us to maintain a good interactivity of the
+              webpage.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you Select an Element From the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              To select an element from the dom there are several ways to do
+              that. To select a tag we use the DOM method
+              <strong>getElementByTagName() </strong>. We can select a specific
+              element that has an id using <strong>getElementById()</strong> DOM
+              method. To select a specific element of a class name we use the
+              <strong>getElementByClassName()</strong>. A single method is
+              widely used which is <strong>querySelector()</strong> helps us to
+              select a specific element of any type whether it can be class or
+              id.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What is Event Delegation in the Context of the DOM, and Why it is
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              When we give a specific event handler into an element and the
+              parent node of that element also has another event handler then if
+              the child element is clicked, both of the event runs. this is
+              called event delegation. To stop this we use
+              <strong>stopPropagation()</strong> function.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              To manipulate an element't attributes or styles we add an
+              eventListener to that specific element. inside the eventListener
+              we explicitly mention what to change and what to edit. we use the
+              <strong>setAttribute()</strong> to change attributes and we use
+              the <strong>classList.add()</strong> to add a class and
+              <strong>classList.remove()</strong> to remove a class from an
+              element.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/blog.js"></script>
+  </body>
+</html>
